@@ -1,0 +1,20 @@
+[project]
+name = "valerianich"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.165.0",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "B", "I", "W", "C"]
+ignore = ["E501", "B008"]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.17.6",
+]
